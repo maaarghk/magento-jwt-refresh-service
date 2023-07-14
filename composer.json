@@ -1,0 +1,17 @@
+{
+    "name": "maaarghk/magento-jwt-refresh-service",
+    "description": "Add an API service for refreshing Magento JWTs",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "license": "MIT",
+    "autoload": {
+        "files": ["src/registration.php"],
+        "psr-4": {
+            "FTS\\JwtRefreshService\\": "src/"
+        }
+    },
+    "require": {
+        "magento/module-jwt-framework-adapter": "^100.4.2",
+        "magento/module-jwt-user-token": "^100.4.1"
+    }
+}

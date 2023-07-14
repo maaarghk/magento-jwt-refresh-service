@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="FTS\JwtRefreshService\Api\JwtRefreshServiceInterface" type="FTS\JwtRefreshService\Model\Api\JwtRefreshService" />
+    <type name="Magento\JwtFrameworkAdapter\Model\JwtManager">
+        <plugin
+            name="fts_jwt_refresh_service_issued_at_date_override"
+            type="FTS\JwtRefreshService\Plugin\IssuedAtDateOverride" />
+    </type>
+</config>

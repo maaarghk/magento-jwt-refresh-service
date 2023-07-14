@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="FTS_JwtRefreshService">
+        <sequence>
+            <module name="Magento_Integration" />
+            <module name="Magento_JwtFrameworkAdapter" />
+            <module name="Magento_JwtUserToken" />
+            <module name="Magento_Webapi" />
+        </sequence>
+    </module>
+</config>

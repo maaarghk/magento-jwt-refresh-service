@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/integration/admin/token/refresh" method="POST">
+        <service class="FTS\JwtRefreshService\Api\JwtRefreshServiceInterface" method="refreshAdminToken" />
+        <resources>
+            <resource ref="Magento_Backend::admin" />
+        </resources>
+    </route>
+</routes>
